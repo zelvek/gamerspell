@@ -17,9 +17,15 @@ header("Location: ../index.php");
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.php">TGCM Admin</a>
+            <a class="navbar-brand" href="index.php">GameSpell Admin</a>
         </div>
         <!-- Top Menu Items -->
+
+
+        
+
+
+
         <ul class="nav navbar-right top-nav">
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></a>
@@ -99,10 +105,10 @@ header("Location: ../index.php");
                     <a href="index.php"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                 </li>
                 <li>
-                    <a href="charts.php"><i class="fa fa-fw fa-bar-chart-o"></i> Charts</a>
+                    <a href="charts.php"><i class="fa fa-fw fa-bar-chart-o"></i> Vérification articles</a>
                 </li>
                 <li>
-                    <a href="tables.php"><i class="fa fa-fw fa-table"></i> Tables</a>
+                    <a href="table.php"><i class="fa fa-fw fa-table"></i>  écrire un article</a>
                 </li>
                 <li>
                     <a href="forms.php"><i class="fa fa-fw fa-edit"></i> Forms</a>
