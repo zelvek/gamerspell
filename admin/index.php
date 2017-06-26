@@ -150,6 +150,7 @@
                             <div class="panel-body">
                                 <div id="morris-donut-chart"></div>
                                 <div class="text-right">
+<<<<<<< HEAD
 
 
 
@@ -159,6 +160,33 @@
 
 
 
+=======
+                                  <?php
+                                    if(isset($_SESSION["erreur"])){
+                                      echo "Il y a une erreur";
+                                      unset($_SESSION["erreur"]);
+                                    } ?>
+                                  <form class="" action="coo/changeMotDePasse.php" method="post">
+
+
+                                    <table>
+                                      <tr>
+                                  <td>Mot de passe : </td>
+                                  <td><input type="password" name="pass" value="" placeholder="mot de passe"></td>
+                                      </tr>
+
+                                      <tr>
+                                  <td>Mot de passe 2 : </td>
+                                  <td><input type="password" name="pass2" value="" placeholder="mot de passe 2"></td>
+                                      </tr>
+                                      <tr>
+                                        <td><input type="submit" class="btn btn-success"  name="" value="Modifier"></td>
+                                      </tr>
+
+                                        </table>
+
+                                      </form>
+>>>>>>> origin/master
                                 </div>
                             </div>
                         </div>
