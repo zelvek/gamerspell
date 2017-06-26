@@ -77,59 +77,7 @@
                             </div>
                             <div class="panel-body">
 
-<form class="" action="coo/adduser.php" method="post">
 
-
-  <table>
-    <tr>
-<td>Une image de Profil </td>
-<td><input type="text" name="image" value="" placeholder="Image de Profil"></td>
-    </tr>
-
-    <tr>
-<td>Nom :</td>
-<td><input type="text" name="name" value="" placeholder="nom"></td>
-    </tr>
-<tr>
-      <td>Email de Connexion</td>
-      <td><input type="email" name="email" value="" placeholder="Email de Connexion"></td>
-    </tr>
-
-<tr>
-  <tr>
-        <td>Email Public</td>
-        <td><input type="email" name="email2" value="" placeholder="Email Public"></td>
-      </tr>
-
-  <tr>
-  <td>Twitter</td>
-  <td><input type="text" name="twitter" value="" placeholder="twitter"></td>
-</tr>
-<tr>
-  <td>twitch / youtube</td>
-  <td><input type="text" name="twitch" value="" placeholder="le nom de votre chaine twitch"></td>
-</tr>
-
-<tr>
-  <td>Description</td>
-  <td><input type="text" name="description" value="" placeholder="une Courte Description"></td>
-</tr>
-<tr>
-  <td>Mot de passe</td>
-  <td><input type="password" name="pass" value="" placeholder="mot de passe"></td>
-</tr>
-<tr>
-  <td>Mot de passe 2</td>
-  <td><input type="password" name="pass2" value="" placeholder="mot de passe 2"></td>
-</tr>
-
-<tr>
-  <td><input type="submit" class="btn btn-success"  name="" value="Ajouter"></td>
-</tr>
-
-  </table>
-
-</form>
 
                             </div>
                         </div>

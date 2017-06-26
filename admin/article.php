@@ -86,10 +86,8 @@
 
 
 
-<?php echo $_POST["editor1"];
-
-
-
+<?php
+echo $_POST["editor1"];
 ?>
 
 

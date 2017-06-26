@@ -22,7 +22,7 @@ header("Location: ../index.php");
         <!-- Top Menu Items -->
 
 
-        
+
 
 
 
@@ -105,10 +105,10 @@ header("Location: ../index.php");
                     <a href="index.php"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                 </li>
                 <li>
-                    <a href="charts.php"><i class="fa fa-fw fa-bar-chart-o"></i> Vérification articles</a>
+                    <a href="verification.php"><i class="fa fa-fw fa-bar-chart-o"></i> Vérification articles</a>
                 </li>
                 <li>
-                    <a href="table.php"><i class="fa fa-fw fa-table"></i>  écrire un article</a>
+                    <a href="article.php"><i class="fa fa-fw fa-table"></i>  écrire un article</a>
                 </li>
                 <li>
                     <a href="forms.php"><i class="fa fa-fw fa-edit"></i> Forms</a>
