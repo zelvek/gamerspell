@@ -1,7 +1,4 @@
 <?php
-
-
-
 //print_r($_POST);
 
 //echo "<br>";
@@ -47,7 +44,6 @@ if ($_POST["pass"] != $_POST["pass2"]) {
 }
 if(!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)){
   $error = true;
-
 }
 if(!filter_var($_POST["email2"], FILTER_VALIDATE_EMAIL)){
   $error = true;
@@ -64,8 +60,8 @@ if($error == true) {
 
 
 
-  $query = $db->prepare("INSERT INTO redac (email, nom, email_sec, twitter, description, mdp, image) VALUES (:email, :nom, :email_sec, :twitter, :description, :mdp, :image)");
-  $pwd = password_hash($_POST["pass"], PASSWORD_DEFAULT);
+$query = $db->prepare("INSERT INTO redac (email, nom, email_sec, twitter, description, mdp, image) VALUES (:email, :nom, :email_sec, :twitter, :description, :mdp, :image)");
+$pwd = password_hash($_POST["pass"], PASSWORD_DEFAULT);
 
   $query->execute([
 "email" => $_POST["email"],
