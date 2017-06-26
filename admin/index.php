@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>ADMIN - TGCM</title>
+    <title>ADMIN - GameSpell</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -51,7 +51,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            Dashboard <small>GamerSpell</small>
+                            Dashboard <small>GameSpell</small>
                         </h1>
                         <ol class="breadcrumb">
                             <li class="active">
@@ -150,17 +150,7 @@
                             <div class="panel-body">
                                 <div id="morris-donut-chart"></div>
                                 <div class="text-right">
-<<<<<<< HEAD
 
-
-
-
-
-
-
-
-
-=======
                                   <?php
                                     if(isset($_SESSION["erreur"])){
                                       echo "Il y a une erreur";
@@ -186,7 +176,7 @@
                                         </table>
 
                                       </form>
->>>>>>> origin/master
+
                                 </div>
                             </div>
                         </div>
