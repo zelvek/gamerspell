@@ -12,15 +12,19 @@ try{
 }
 
 
-$query = $db->prepare('SELECT is_delete FROM streamer WHERE email = :email;');
+$query = $db->prepare('SELECT is_delete FROM redac WHERE email = :email;');
   $query->execute(["email" =>$_POST["email"]] );
 
 if($query->fetch()["Is_delete"] != 1){
 
-  $query = $db->prepare('SELECT mdp FROM streamer WHERE email = :email;');
+  $query = $db->prepare('SELECT mdp FROM redac WHERE email = :email;');
     $query->execute(["email" =>$_POST["email"]] );
 
-    if( password_verify($_POST["mdp"], $query->fetch()["mdp"])){
+
+$query = $query->fetchAll(PDO::FETCH_ASSOC);
+
+
+    if( password_verify($_POST["mdp"], $query["0"]["mdp"])){
 
 
 
@@ -29,12 +33,14 @@ if($query->fetch()["Is_delete"] != 1){
 
 
 
-
+echo "tet";
 
 
       header('Location: ../admin/index.php');
     }else {
-          header('Location: ../index.php');
+  header('Location: ../index.php');
+
+
   }
 
 }else {
