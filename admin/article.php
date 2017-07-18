@@ -77,9 +77,59 @@
                                 <h3 class="panel-title"><i class="fa fa-plus fa-fw"></i>Article</h3>
                             </div>
                             <div class="panel-body">
+
+<?php
+require "./coo/config.php";
+
+try {
+  $db = new PDO("mysql:host=".DB_HOST.";dbname=".DB_NAME,DB_USER,DB_PWD );
+}catch(Exception $e){
+  die("Erreur SQL : ".$e->getMessage() );
+}
+
+$yolo = $db->query('SELECT nom FROM jeux');
+
+
+$yolo = $yolo->fetchAll(PDO::FETCH_COLUMN);
+echo $db->errorInfo()[2];
+
+
+//print_r($yolo);
+ ?>
+
+
 <form class="" action="table.php" method="post">
+
+  <div class="form-group">
+<label>Titre de L'article</label>
+<input id="titre" class="form-control" placeholder="Titre de L'article">
+</div>
+  <div class="form-group">
+
   <textarea id="editor1" name="editor1" rows="8" cols="80"></textarea>
-<input type="submit" name="" value="Envoyer l'article">
+    </div>
+  <div class="form-group">
+
+
+  <label>Le jeux en Question</label>
+<select id="jeux" class="form-control">
+<?php
+foreach ($yolo as $key => $value) {
+  echo "<option>".$value."</option>";
+}
+
+ ?>
+
+  </optgroup>
+
+</select></div>
+
+
+<input type="submit" class="btn btn-primary" name="" value="Envoyer l'article">
+
+
+
+
 </form>
 
 
@@ -87,7 +137,7 @@
 
 
 <?php
-echo $_POST["editor1"];
+
 ?>
 
 
@@ -117,29 +167,6 @@ echo $_POST["editor1"];
 
 
 
-
-                    <div class="col-lg-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-clock-o fa-fw"></i> Tasks Panel</h3>
-                            </div>
-                            <div class="panel-body">
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h3 class="panel-title"><i class="fa fa-money fa-fw"></i> Transactions Panel</h3>
-                            </div>
-                            <div class="panel-body">
-                                <div class="table-responsive">
-                                    
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <!-- /.row -->
 
             </div>

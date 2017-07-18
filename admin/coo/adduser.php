@@ -50,7 +50,7 @@ if(!filter_var($_POST["email2"], FILTER_VALIDATE_EMAIL)){
 }
 if($error == true) {
 
-
+echo "sqd";
 
 }else {
 
@@ -76,4 +76,6 @@ echo $query->errorInfo()[2];
 header("Location: ../index.php");
 
 }
+}else {
+  echo "qsdqsd";
 }
