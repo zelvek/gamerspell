@@ -212,6 +212,10 @@
                                   <tr>
                                     <td><input type="submit" class="btn btn-success"  name="" value="Ajouter"></td>
                                   </tr>
+
+
+
+
                             </table>
 
 
@@ -259,7 +263,7 @@ $query = $db->prepare("INSERT INTO jeux (nom) VALUES (:nom)");
 
 mkdir("../article/".$_POST["nbtjeux"]."","0777");
 
-echo "je jeux a été ajouté ";
+echo "le jeux a été ajouté ";
 
 
 
@@ -330,9 +334,12 @@ echo "je jeux a été ajouté ";
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h3 class="panel-title"><i class="fa fa-money fa-fw"></i> Transactions Panel</h3>
+
+
+
                             </div>
                             <div class="panel-body">
-
+                            
 
 
                             </div>

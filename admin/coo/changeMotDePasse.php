@@ -1,6 +1,5 @@
 <?php
 session_start();
-$_SESSION["erreur"] = "erreur";
 
 //print_r($_POST);
 
@@ -36,8 +35,6 @@ header("Location: ../index.php");
 
 
 
-
-
   $query = $db->prepare("UPDATE redac SET mdp = :mdp WHERE email = :email");
   $pwd = password_hash($_POST["pass"], PASSWORD_DEFAULT);
 
@@ -45,9 +42,14 @@ header("Location: ../index.php");
 "email" => $_SESSION["email"],
 "mdp" => $pwd
 ]);
+unset($_SESSION["erreur"]);
 
 echo $query->errorInfo()[2];
 header("Location: ../index.php");
 
+
+
 }
+}else {
+
 }
